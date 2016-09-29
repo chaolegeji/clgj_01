@@ -22,8 +22,8 @@ function startMove(obj,json,fn){
 			//计算速度
 			var speed = (json[attr]-icur)/8;
 			speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			//检测停止
 			if (icur!=json[attr]) {
-				//检测停止
 				flag = false;
 			}
 			if (attr=='opacity') {
